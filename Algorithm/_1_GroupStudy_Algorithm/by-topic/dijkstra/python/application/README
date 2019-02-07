@@ -1,0 +1,12 @@
+(Under working) Application of python-based dijkstra algorithm
+
+Visualizes the whole Seoul subway line in the Google Map 
+and presents the shortest path. Uses AWS API Gateway and 
+Lambda to utilize the python implementation and send back 
+the result to the client. The client displays the Google
+Map and the route according to the response using 
+Javascript APIs.
+
+Base technique : HTML, Javascript, CSS, Python
+Environment : AWS API Gateway, Lambda
+Author: Jisung Kim

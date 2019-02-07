@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<TITLE>q2</TITLE>
+<SCRIPT SRC="jquery-1.11.1.min.js"></script>
+<SCRIPT SRC="js/jquery-ui-1.10.4.custom.min.js"></script>
+<link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.10.4.custom.css" />
+<script>
+$(document).ready(function() {
+	$('#box').draggable().resizable();
+	$('#ylw').droppable({
+		accept: '#box',
+		drop: function (event, ui) {
+			$('#ylw').html("Accepted in 1997");
+		}
+	});
+});
+</script>
+<style>
+	#box { width:300px; height:500px; }
+	#ylw { width:200px; height:150px; background:#FFFF00; }
+</style>
+</HEAD>
+<BODY>
+	<div id="box" class="ui-widget-content">
+		<h1 class="ui-widget-header">Changduk palace</h1>
+	</div>
+
+	<div id="ylw" class="ui-widget-content">
+	<p>World's Heritage</p>
+	</div>
+</BODY>
+</HTML>

@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<TITLE>ASSIGNMENT1</TITLE>
+<script src="jquery-1.11.1.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$('#hs').click(function () {
+			$('img').toggle('slow');
+		});
+
+		$('#slide').click(function () {
+			$('img').slideToggle('slow');
+		});
+
+		$('#fade').click(function () {
+			$('img').fadeToggle('slow');
+		});
+
+		$('#tr').click(function () {
+			$('#img1').animate({
+				left:'500'
+			}, 'slow');
+		});
+
+		$('#tl').click(function () {
+			$('#img1').animate({
+				left:'0'
+			}, 'slow');
+		});
+
+		$('#mv').click(function () {
+			$('#img1').animate({
+				left:'100',
+				opacity:'-=0.8'
+			}, 1000).animate({
+				left:'0',
+				opacity:'+=0.8'
+			}, 1000);
+		});
+	});
+</script>
+</HEAD>
+<BODY>
+<p>
+<button id="hs">Hide/show</button>
+<button id="slide">Slide</button>
+<button id="fade">Fade</button>
+<button id="tr">To right</button>
+<button id="tl">To left</button>
+<button id="mv">Move</button>
+</p><p><img src="image.jpg" style="position:relative;" id="img1" /></p>
+</BODY>
+</HTML>

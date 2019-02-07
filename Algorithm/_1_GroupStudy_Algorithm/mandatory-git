@@ -1,0 +1,20 @@
+[Super basics]
+
+- Downloading source code in the github
+$ git clone https://github.com/JisungKim/algorithm
+
+- Downloading patches(commits) and merge to the local branch
+$ git pull origin
+
+[Using git]
+
+- Managing the local source code is done by following steps.
+  1. Change source codes
+  2. Stage the changes
+  	$ git add [file]
+  3. Commit the staged changes
+  	$ git commit [-m expr]
+
+- To push changes to the remote repository
+  1. Push commits
+  	$ git push [remote repository] [branch]
