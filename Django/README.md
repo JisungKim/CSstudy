@@ -18,6 +18,7 @@ Mission 1. Reading and following django official tutorial
 Finished reading page#1
 2. 02 February 2019
 Finished reading before Django admin in page#2
-
+3. 08 February 2019
+Finished reading before Use the template system in page#3
 Mission 2. Reading and following book Two scoops of django
 -------------
